@@ -459,7 +459,7 @@ inline int wxStricmp_String(const wxString& s1, const T& s2)
     { return s1.CmpNoCase(s2); }
 WX_STRCMP_FUNC(wxStricmp, wxCRT_StricmpA, wxCRT_StricmpW, wxStricmp_String)
 
-#if defined(wxCRT_StrcollA) && defined(wxCRT_StrcollW)
+#if defined(wxCRT_StrcollA) && defined(wxCRT_StrcollW) && defined(wxStrcoll)
 
 // GCC 3.4 and other compilers have a bug that causes it to fail compilation if
 // the template's implementation uses overloaded function declared later (see
